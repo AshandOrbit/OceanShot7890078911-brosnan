@@ -6,8 +6,10 @@ Static prototype of the OceanShot commercial site. All business content is place
 - `index.html`: single-page site (services, projects, mitigation, clients, calculator teaser, lab, learning, footer)
 - `assets/css/styles.css`: styles, light and dark themes
 - `assets/js/main.js`: services, project portfolio and map, coastal scene, client tabs, demo portal and calculator
-- `assets/img/hero.jpg`, `assets/img/barbuda.jpg`: page images
+- `assets/img/hero.jpg`, `assets/img/barbuda.jpg`, `assets/img/living-coastline.jpg`: page images and the illustrated coastal scene
 - `404.html`, `robots.txt`, `.nojekyll`
+
+- `assets/data/elements.json`: editable content records for the Living Coastline (text, marker positions, links, category settings). Edit this file to update panels without touching the illustration or code.
 
 ## Publish on GitHub Pages
 1. Create a repository and upload all files, keeping the folder structure.
@@ -17,6 +19,6 @@ Static prototype of the OceanShot commercial site. All business content is place
 ## Before public release
 - **Portal and calculator are demos.** GitHub Pages is static hosting and cannot protect client data. The sign-in is not real. Connect a real identity provider and backend (for example Auth0, Supabase or Firebase) before any client uses it. Forms are not connected to anything.
 - **Verification.** The in-page verification register lists content needing scientific, engineering, legal or commercial review. Remove that section before launch.
-- **Images.** Confirm usage rights and credits for `hero.jpg` and `barbuda.jpg`, and confirm the Lab caption and donor acknowledgment wording with OceanShot.
+- **Images.** Confirm usage rights and credits for `hero.jpg`, `barbuda.jpg` and `living-coastline.jpg`, and confirm the Lab caption and donor acknowledgment wording with OceanShot.
 - **Calculator.** Defaults are illustrative placeholders, not OceanShot pricing or results.
 - **Map.** Add a licensed basemap and verified project coordinates.

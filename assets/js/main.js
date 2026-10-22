@@ -29,34 +29,32 @@ const CL={"Hotels and resorts":["Shoreline erosion, reef decline, asset exposure
 $('ctabs').innerHTML=Object.keys(CL).map((k,i)=>`<button class="${i?'':'on'}">${k}</button>`).join('');
 function cp(k){const v=CL[k];$('cpane').innerHTML=`<h3>${k}</h3><p><b>Challenges:</b> ${v[0]}</p><p><b>Relevant services:</b> ${v[1]}</p><p><b>Anticipated benefits:</b> ${v[2]}</p><p><b>Project considerations / how to begin:</b> [PLACEHOLDER] <a href="#contact">Start a project</a></p>`}
 document.querySelectorAll('#ctabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#ctabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');cp(b.textContent)});cp("Hotels and resorts");
-$('vr').innerHTML='<tr><th>Item</th><th>Verifier</th></tr>'+[["Service scopes and capabilities","Commercial"],["Partner-delivered services and partner agreements","Commercial, Legal"],["Project facts, results, imagery rights","Scientific, Legal"],["Reef and beach protection claims","Scientific, Engineering"],["Structure designs and installation methods","Engineering"],["Mitigation and permitting statements","Legal"],["Headline data point and source","Scientific"],["Table tile definitions, evidence and service mapping","Scientific, Commercial"],["Calculator assumptions, pricing, ROI","Commercial, Scientific"],["Lab and nonprofit funding separation","Legal"],["Lab caption, donor acknowledgment wording, image rights","Commercial, Legal"]].map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('');
+$('vr').innerHTML='<tr><th>Item</th><th>Verifier</th></tr>'+[["Service scopes and capabilities","Commercial"],["Partner-delivered services and partner agreements","Commercial, Legal"],["Project facts, results, imagery rights","Scientific, Legal"],["Reef and beach protection claims","Scientific, Engineering"],["Structure designs and installation methods","Engineering"],["Mitigation and permitting statements","Legal"],["Headline data point and source","Scientific"],["Living Coastline panel content, sources and service mapping","Scientific, Commercial"],["Calculator assumptions, pricing, ROI","Commercial, Scientific"],["Lab and nonprofit funding separation","Legal"],["Lab caption, donor acknowledgment wording, image and illustration rights","Commercial, Legal"]].map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('');
 
-const CT={"Habitats":["#2a9d8f","Reef & Beach Resilience"],"Interventions":["#e07a3f","Restoration Strategy & Project Delivery"],"Technologies":["#5b6fd6","Coastal Science & Monitoring"],"Monitoring metrics":["#8c63b8","Coastal Science & Monitoring"],"Ecosystem services":["#c9a85c","Coastal Science & Monitoring"]};
-const TL=[["Co","Coral reef","Habitats"],["Sg","Seagrass meadow","Habitats"],["Mg","Mangrove","Habitats"],["Sm","Salt marsh","Habitats"],["Du","Beach and dune","Habitats"],
-["Cp","Coral propagation and outplanting","Interventions"],["Rs","Reef structures","Interventions"],["Pr","Passive restoration","Interventions"],["Ar","Active restoration","Interventions"],["Hy","Hybrid approach","Interventions"],["Cv","Conventional infrastructure (comparison)","Interventions"],
-["Dr","Drone survey","Technologies"],["Pg","Photogrammetry mapping","Technologies"],["Hd","Hydrodynamic modeling","Technologies"],["Sn","Sensors and loggers","Technologies"],
-["Cc","Coral cover","Monitoring metrics"],["Bd","Biodiversity survey","Monitoring metrics"],["Wa","Wave attenuation","Monitoring metrics"],["Sc","Shoreline change","Monitoring metrics"],
-["Ps","Coastal protection","Ecosystem services"],["Fs","Fisheries support","Ecosystem services"],["Av","Asset and property value","Ecosystem services"],["Bc","Blue carbon","Ecosystem services"]];
-let cat='';
-const BP=[[21,85,72],[19,140,72],[4,190,108],[3,240,128],[10,306,132],[18,332,92],[2,376,134],[1,480,222],[22,480,300],[13,455,184],[20,560,205],[5,535,262],[0,625,268],[15,613,336],[16,680,270],[6,740,286],[11,612,52],[12,520,110],[14,702,138],[17,640,148],[7,570,385],[8,620,385],[9,670,385]];
-const NS='http://www.w3.org/2000/svg';
-function mk(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e}
-(function(){const sc=$('sc');
- for(let x=440;x<=540;x+=7){const y=235+(x-430)*.5;mk('path',{d:`M${x} ${y}v-${14+(x%3)*5}`},$('sg'))}
- const cl=['#e8786b','#f0a35e','#c46fb0','#e7d45f'];
- for(let x=568,i=0;x<=680;x+=12,i++){mk('circle',{cx:x,cy:300+(x-560)*.133-5,r:7+(i%3)*2,fill:cl[i%4]},$('cr'))}
- BP.forEach(p=>{const t=TL[p[0]],g=mk('g',{class:'bd','data-i':p[0],tabindex:0,role:'button','aria-label':t[1]},sc);
-  mk('circle',{cx:p[1],cy:p[2],r:15,fill:CT[t[2]][0],stroke:'#fff','stroke-width':2},g);
-  const x=mk('text',{x:p[1],y:p[2]+4,'text-anchor':'middle',fill:'#fff','font-size':11,'font-weight':700,stroke:'#0008','stroke-width':2,'paint-order':'stroke'},g);x.textContent=t[0];
-  mk('title',{},g).textContent=t[1]});
- sc.addEventListener('click',e=>{const g=e.target.closest('[data-i]');if(g)sel(+g.dataset.i)});
- sc.addEventListener('keydown',e=>{if(e.key=='Enter'){const g=e.target.closest('.bd');if(g)sel(+g.dataset.i)}})})();
-function sel(i){document.querySelectorAll('#sc [data-i]').forEach(x=>x.classList.toggle('on',x.dataset.i==i));tdet(TL[i])}
-function tbl(){$('tlg').innerHTML=Object.keys(CT).map(k=>`<button style="--c:${CT[k][0]}" class="${cat==k?'on':''}" data-k="${k}">${k}</button>`).join('');
- document.querySelectorAll('#tlg button').forEach(b=>b.onclick=()=>{cat=cat==b.dataset.k?'':b.dataset.k;tbl()});
- document.querySelectorAll('#sc [data-i]').forEach(x=>x.classList.toggle('dim',!!cat&&TL[x.dataset.i][2]!=cat))}
-function tdet(t){$('td').innerHTML=`<div class="tag">${t[2]}</div><h3>${t[1]}</h3><span class="pill">Unverified</span><table><tr><td>Definition</td><td>[PLACEHOLDER]</td></tr><tr><td>Where it applies</td><td>[PLACEHOLDER]</td></tr><tr><td>Evidence and source</td><td>[PLACEHOLDER, citation required]</td></tr><tr><td>Related OceanShot service (proposed)</td><td>${CT[t[2]][1]}</td></tr><tr><td>Related projects</td><td>[Link to project pages once verified]</td></tr></table>`}
-tbl();tdet(TL[0]);
+let D,E,vw='public',cat='',cur='';
+const $$=s=>document.querySelectorAll(s);
+fetch('assets/data/elements.json').then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{D=d;E=d.elements;lc()}).catch(()=>{$('td').textContent='Content could not load. View the site over http, for example on GitHub Pages, rather than opening the file directly.'});
+const C=k=>D.categories[k];
+const gl=k=>`<span class="gl s-${C(k).shape}" style="--c:${C(k).color}" aria-hidden="true"></span>`;
+function lc(){
+ $('lg').innerHTML=Object.keys(D.categories).map(k=>`<button data-k="${k}" aria-pressed="false">${gl(k)}${C(k).label}</button>`).join('');
+ $('scn').insertAdjacentHTML('beforeend',E.filter(e=>e.shown!==false).map(e=>`<span class="hs${e.featured?' ft':''}" data-id="${e.id}" style="left:${e.x}%;top:${e.y}%"><button class="s-${C(e.cat).shape}" style="--c:${C(e.cat).color};--k:${C(e.cat).ink}" aria-label="${e.name}, ${C(e.cat).label}" title="${e.name}">${e.sym}</button></span>`).join(''));
+ $('el').innerHTML=Object.keys(D.categories).map(k=>`<div><div class="tag">${C(k).label}</div>`+E.filter(e=>e.cat==k).map(e=>`<button class="chip" data-id="${e.id}">${gl(k)}${e.name}${e.shown===false?' (not drawn)':''}</button>`).join('')+'</div>').join('');
+ $('table').addEventListener('click',ev=>{
+  const m=ev.target.closest('[data-m]'),k=ev.target.closest('[data-k]'),i=ev.target.closest('[data-id]');
+  if(m){vw=m.dataset.m;$$('#md button').forEach(b=>{const o=b==m;b.classList.toggle('on',o);b.setAttribute('aria-pressed',o)});panel()}
+  else if(k){cat=cat==k.dataset.k?'':k.dataset.k;flt()}
+  else if(i){sel(i.dataset.id,true)}});
+ sel('reef-structures',false)}
+function flt(){$$('#lg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k==cat));
+ E.forEach(e=>{const off=cat&&e.cat!=cat;$$(`[data-id="${e.id}"]`).forEach(x=>{x.classList.toggle('dim',!!off);const bt=x.tagName=='SPAN'?x.firstChild:x;bt.tabIndex=off?-1:0})})}
+function sel(id,sc){cur=id;$$('.hs,#el .chip').forEach(x=>x.classList.toggle('on',x.dataset.id==id));panel();if(sc)$('td').scrollIntoView({block:'nearest',behavior:'smooth'})}
+function panel(){const e=E.find(x=>x.id==cur),c=C(e.cat);
+ const rel=[...new Set([...(e.links||[]),...E.filter(x=>(x.links||[]).includes(e.id)).map(x=>x.id)])].map(i=>E.find(x=>x.id==i)).filter(Boolean);
+ const S=(t,b)=>`<details open><summary>${t}</summary><p>${b}</p></details>`;
+ const pub=[S('Definition and function',e.def),S('Relationship to the coastal ecosystem',e.eco),S('Restoration and monitoring methods',e.methods)];
+ const cli=[S('Applicable OceanShot service',(e.service||c.service)+' <span class="note">(proposed, pending confirmation)</span>'),S('Potential client benefits',e.client),S('Related projects and research','[PLACEHOLDER: link verified OceanShot projects and publications]')];
+ $('td').innerHTML=`<div class="tag">${gl(e.cat)}${c.label}</div><h3>${e.name}</h3><span class="pill">Unverified draft</span>${e.shown===false?' <span class="pill">Not shown in illustration</span>':''}`+(rel.length?'<p class="note">Related: '+rel.map(r=>`<button class="chip" data-id="${r.id}">${gl(r.cat)}${r.name}</button>`).join('')+'</p>':'')+(vw=='public'?pub:cli).join('')+S('Scientific sources and limitations','Sources: [PLACEHOLDER, citations required]. '+D.limits)}
 const f=n=>'$'+Math.round(n).toLocaleString('en-US');
 function calc(){
  const d=+$('dmg').value,c=+$('cost').value,m=+$('mon').value,r=$('red').value/100*$('scen').value,k=$('dr').value/100;

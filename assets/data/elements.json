@@ -1,0 +1,381 @@
+{
+ "limits": "Draft general description, not yet scientifically reviewed. Effectiveness is site-specific and depends on local conditions, design and monitoring.",
+ "categories": {
+  "habitats": {
+   "label": "Habitats",
+   "color": "#23797a",
+   "ink": "#fff",
+   "shape": "circle",
+   "service": "Reef & Beach Resilience"
+  },
+  "interventions": {
+   "label": "Interventions",
+   "color": "#c4601a",
+   "ink": "#fff",
+   "shape": "square",
+   "service": "Restoration Strategy & Project Delivery"
+  },
+  "technologies": {
+   "label": "Technologies",
+   "color": "#2d55c4",
+   "ink": "#fff",
+   "shape": "diamond",
+   "service": "Coastal Science & Monitoring"
+  },
+  "monitoring": {
+   "label": "Monitoring metrics",
+   "color": "#7a55b3",
+   "ink": "#fff",
+   "shape": "hex",
+   "service": "Coastal Science & Monitoring"
+  },
+  "services": {
+   "label": "Ecosystem services",
+   "color": "#c9a233",
+   "ink": "#1b1b1b",
+   "shape": "pent",
+   "service": "Coastal Science & Monitoring"
+  }
+ },
+ "elements": [
+  {
+   "id": "coral-reef",
+   "sym": "Co",
+   "name": "Coral reef",
+   "cat": "habitats",
+   "x": 27.2,
+   "y": 67.6,
+   "def": "Structurally complex limestone habitat built by reef-building corals.",
+   "eco": "Dissipates wave energy and shelters fish and invertebrates.",
+   "methods": "Cover surveys, bleaching and disease monitoring, restoration where feasible.",
+   "client": "Reef condition informs shoreline exposure and asset risk.",
+   "links": [
+    "reef-structures",
+    "coral-prop"
+   ]
+  },
+  {
+   "id": "seagrass",
+   "sym": "Sg",
+   "name": "Seagrass meadow",
+   "cat": "habitats",
+   "x": 93.9,
+   "y": 84.0,
+   "def": "Submerged flowering plants forming meadows in shallow sediment.",
+   "eco": "Stabilizes sediment, shelters juvenile fish and stores carbon.",
+   "methods": "Shoot density surveys, habitat mapping, protection or replanting where feasible.",
+   "client": "Healthier meadows support water quality and shoreline stability.",
+   "links": [
+    "blue-carbon",
+    "hybrid"
+   ]
+  },
+  {
+   "id": "mangrove",
+   "sym": "Mg",
+   "name": "Mangrove",
+   "cat": "habitats",
+   "def": "Salt-tolerant trees whose root systems stand in tidal water.",
+   "eco": "Buffers shorelines, traps sediment and provides nursery habitat.",
+   "methods": "Canopy and root surveys, hydrology assessment, protection or planting.",
+   "client": "Supports shoreline buffering and habitat obligations.",
+   "links": [
+    "blue-carbon",
+    "coastal-protection"
+   ],
+   "shown": false
+  },
+  {
+   "id": "salt-marsh",
+   "sym": "Sm",
+   "name": "Salt marsh",
+   "cat": "habitats",
+   "def": "Tidal wetland dominated by salt-tolerant grasses and herbs.",
+   "eco": "Slows water, traps sediment and filters runoff.",
+   "methods": "Vegetation transects, elevation and tide monitoring.",
+   "client": "Possible natural buffer for low-lying property.",
+   "links": [
+    "blue-carbon"
+   ],
+   "shown": false
+  },
+  {
+   "id": "beach-dune",
+   "sym": "Du",
+   "name": "Beach and dune",
+   "cat": "habitats",
+   "x": 14.5,
+   "y": 30.7,
+   "def": "Sand shoreline and the vegetated ridge behind it.",
+   "eco": "Absorbs wave energy and holds sand supply for storms.",
+   "methods": "Beach profiling, vegetation surveys, shoreline mapping.",
+   "client": "Maintains usable shoreline and protects assets behind it.",
+   "links": [
+    "shoreline-change",
+    "coastal-protection"
+   ]
+  },
+  {
+   "id": "coral-prop",
+   "sym": "Cp",
+   "name": "Coral propagation and outplanting",
+   "cat": "interventions",
+   "x": 58.5,
+   "y": 65.6,
+   "def": "Growing coral fragments or recruits in nurseries, then attaching them to degraded reef.",
+   "eco": "Adds coral colonies where natural recovery is limited.",
+   "methods": "Nursery husbandry, outplanting, survival and growth monitoring.",
+   "client": "Targeted reef recovery with trackable outcomes.",
+   "links": [
+    "active"
+   ]
+  },
+  {
+   "id": "reef-structures",
+   "sym": "Rs",
+   "name": "Reef structures",
+   "cat": "interventions",
+   "x": 68.4,
+   "y": 61.5,
+   "def": "Engineered substrates placed on the seabed to support reef growth and habitat.",
+   "eco": "Add physical complexity and habitat, and interact with wave energy.",
+   "methods": "Design and siting studies, installation, biological and structural monitoring.",
+   "client": "Combines habitat gain with a possible shoreline-protection function, subject to site engineering.",
+   "links": [
+    "active",
+    "hybrid",
+    "biodiversity",
+    "coastal-protection"
+   ],
+   "service": "Living Marine Infrastructure",
+   "featured": true
+  },
+  {
+   "id": "passive",
+   "sym": "Pr",
+   "name": "Passive restoration",
+   "cat": "interventions",
+   "x": 45.8,
+   "y": 71.7,
+   "def": "Removing stressors so ecosystems recover without direct planting.",
+   "eco": "Relies on natural recruitment and recovery.",
+   "methods": "Stressor assessment, protection measures, long-term monitoring.",
+   "client": "Lower-intervention baseline for comparison with active options.",
+   "links": []
+  },
+  {
+   "id": "active",
+   "sym": "Ar",
+   "name": "Active restoration",
+   "cat": "interventions",
+   "x": 79.4,
+   "y": 66.6,
+   "def": "Direct action to rebuild habitat, such as planting, transplanting or placing substrate.",
+   "eco": "Speeds recovery where natural processes are limited.",
+   "methods": "Site assessment, restoration works, performance monitoring.",
+   "client": "Faster, measurable recovery where justified.",
+   "links": [
+    "reef-structures"
+   ]
+  },
+  {
+   "id": "hybrid",
+   "sym": "Hy",
+   "name": "Hybrid approach",
+   "cat": "interventions",
+   "x": 52.1,
+   "y": 82.0,
+   "def": "Combining engineered structures with living habitat restoration.",
+   "eco": "Pairs physical stability with ecological function.",
+   "methods": "Integrated design, staged installation, joint engineering and ecological monitoring.",
+   "client": "Balances protection performance and ecological value.",
+   "links": [
+    "reef-structures"
+   ],
+   "service": "Living Marine Infrastructure"
+  },
+  {
+   "id": "conventional",
+   "sym": "Cv",
+   "name": "Conventional infrastructure (comparison)",
+   "cat": "interventions",
+   "def": "Hard engineering such as seawalls or revetments, used here as a comparison baseline. Not shown in the illustration.",
+   "eco": "Protects locally but can alter sediment and habitat.",
+   "methods": "Lifecycle cost comparison, performance and impact review.",
+   "client": "Enables side-by-side comparison with nature-based options.",
+   "links": [],
+   "service": "Living Marine Infrastructure",
+   "shown": false
+  },
+  {
+   "id": "drone",
+   "sym": "Dr",
+   "name": "Drone survey",
+   "cat": "technologies",
+   "def": "Aerial platform for imaging and surveying coastal areas.",
+   "eco": "Captures shoreline and habitat extent across large areas.",
+   "methods": "Repeat flights, orthomosaics, change detection.",
+   "client": "Low-footprint baseline and progress mapping.",
+   "links": [
+    "photogram"
+   ],
+   "shown": false
+  },
+  {
+   "id": "photogram",
+   "sym": "Pg",
+   "name": "Photogrammetry mapping",
+   "cat": "technologies",
+   "def": "Building measured 3D models and maps from overlapping photographs.",
+   "eco": "Quantifies reef structure and shoreline form, and how they change.",
+   "methods": "Overlapping image capture, ground control, model comparison over time.",
+   "client": "Visual, measurable evidence of change for reporting.",
+   "links": [
+    "drone",
+    "shoreline-change"
+   ],
+   "shown": false
+  },
+  {
+   "id": "hydro",
+   "sym": "Hm",
+   "name": "Hydrodynamic modeling",
+   "cat": "technologies",
+   "x": 52.1,
+   "y": 35.3,
+   "def": "Numerical models of waves, currents and water levels.",
+   "eco": "Shows how reefs and habitats affect wave energy and flow.",
+   "methods": "Field measurements, calibration and validation, scenario runs.",
+   "client": "Informs design and exposure scenarios, with stated uncertainty.",
+   "links": [
+    "wave-att"
+   ]
+  },
+  {
+   "id": "sensors",
+   "sym": "Sn",
+   "name": "Sensors and loggers",
+   "cat": "technologies",
+   "def": "Instruments recording conditions such as temperature, waves and water quality.",
+   "eco": "Tracks environmental drivers that affect habitats.",
+   "methods": "Deployment, calibration, maintenance, data quality checks.",
+   "client": "Continuous data for monitoring and reporting.",
+   "links": [
+    "wave-att"
+   ],
+   "shown": false
+  },
+  {
+   "id": "coral-cover",
+   "sym": "Cc",
+   "name": "Coral cover",
+   "cat": "monitoring",
+   "x": 34.8,
+   "y": 52.3,
+   "def": "The share of seabed covered by living coral.",
+   "eco": "A common indicator of reef condition.",
+   "methods": "Photo quadrats, transects, image analysis.",
+   "client": "A trackable metric for reef recovery.",
+   "links": [
+    "coral-reef"
+   ]
+  },
+  {
+   "id": "biodiversity",
+   "sym": "Bd",
+   "name": "Biodiversity survey",
+   "cat": "monitoring",
+   "x": 88.6,
+   "y": 57.4,
+   "def": "A survey of the species present in a habitat.",
+   "eco": "Indicates habitat function and community recovery.",
+   "methods": "Visual census, standardized surveys, repeat sampling.",
+   "client": "Evidence of ecological outcomes beyond physical structure.",
+   "links": [
+    "reef-structures"
+   ]
+  },
+  {
+   "id": "wave-att",
+   "sym": "Wa",
+   "name": "Wave attenuation",
+   "cat": "monitoring",
+   "x": 66.6,
+   "y": 41.0,
+   "def": "Reduction in wave energy as waves cross reefs or vegetation.",
+   "eco": "A key link between habitat and shoreline protection.",
+   "methods": "Paired wave sensors, hydrodynamic modeling.",
+   "client": "Connects habitat to protection performance.",
+   "links": [
+    "coastal-protection"
+   ]
+  },
+  {
+   "id": "shoreline-change",
+   "sym": "Sc",
+   "name": "Shoreline change",
+   "cat": "monitoring",
+   "x": 29.0,
+   "y": 34.8,
+   "def": "Movement of the shoreline position over time.",
+   "eco": "Shows erosion or accretion trends.",
+   "methods": "Repeat surveys, drone and satellite imagery, beach profiles.",
+   "client": "A basis for tracking asset exposure.",
+   "links": []
+  },
+  {
+   "id": "coastal-protection",
+   "sym": "Ps",
+   "name": "Coastal protection",
+   "cat": "services",
+   "x": 39.4,
+   "y": 26.1,
+   "def": "Reduced wave exposure, flooding or erosion supplied by natural or hybrid features.",
+   "eco": "Arises from habitats and structures working together.",
+   "methods": "Wave and shoreline monitoring, modeling.",
+   "client": "Protection of property and infrastructure, to be quantified for each site.",
+   "links": [],
+   "service": "Reef & Beach Resilience"
+  },
+  {
+   "id": "fisheries",
+   "sym": "Fs",
+   "name": "Fisheries support",
+   "cat": "services",
+   "x": 49.8,
+   "y": 55.8,
+   "def": "The contribution of habitats to fish and invertebrate populations.",
+   "eco": "Habitats provide nursery and feeding grounds.",
+   "methods": "Fish surveys, catch data where available.",
+   "client": "Livelihood and food-security benefits for communities.",
+   "links": []
+  },
+  {
+   "id": "asset-value",
+   "sym": "Av",
+   "name": "Asset and property value",
+   "cat": "services",
+   "def": "Economic value of coastal property and infrastructure tied to shoreline condition.",
+   "eco": "Depends on protection, access and setting.",
+   "methods": "Exposure assessment, valuation, damage and maintenance records.",
+   "client": "Avoided losses and maintenance costs, to be modeled with verified inputs.",
+   "links": [
+    "coastal-protection"
+   ],
+   "shown": false
+  },
+  {
+   "id": "blue-carbon",
+   "sym": "Bc",
+   "name": "Blue carbon",
+   "cat": "services",
+   "x": 6.4,
+   "y": 65.6,
+   "def": "Carbon stored in coastal vegetated habitats and their sediments.",
+   "eco": "Mangroves, marsh and seagrass can hold carbon in soils.",
+   "methods": "Sediment coring, habitat mapping, accounting methods.",
+   "client": "A possible carbon-finance pathway, subject to methodology and verification.",
+   "links": []
+  }
+ ]
+}
