@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OceanShot | Living infrastructure. Resilient coastlines.</title>
+<meta name="description" content="OceanShot develops, delivers and monitors living coastal infrastructure that protects economic assets while restoring marine ecosystems.">
+<meta property="og:title" content="OceanShot">
+<meta property="og:description" content="Commercial nature-based infrastructure and ecosystem restoration, supported by scientific research.">
+<meta property="og:image" content="assets/img/hero.jpg">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/main.js" defer></script>
+</head><body>
+<header><div class="logo">Ocean<span>Shot</span></div>
+<nav><a href="#solutions" data-s>Services</a><a href="#projects" data-s>Projects</a><a href="#clients" data-s>Clients</a><a href="#lab" data-s>Lab</a><a href="#" id="navcalc">Calculator</a><a href="#contact" data-s>Contact</a></nav>
+<button class="btn o" id="pbtn">Client portal</button></header>
+
+<main id="site">
+<div class="hero"><div class="wrap">
+<div class="tag" style="color:#cfeeee">Coastal resilience · Reef restoration</div>
+<h1>Living infrastructure. Resilient coastlines.</h1>
+<p>OceanShot is a commercial nature-based infrastructure and ecosystem-restoration enterprise, supported by scientific research. We develop, deliver and monitor living coastal infrastructure that protects economic assets while restoring marine ecosystems.</p>
+<p><a class="btn" href="#contact">Start a project</a> <button class="btn o" id="signup0">Estimate value (sign up)</button></p>
+<div class="pmr"><div><b>Protect</b>Coastal assets and communities</div><div><b>Restore</b>Reef ecosystems and biodiversity</div><div><b>Measure</b>Resilience, performance and value</div></div>
+</div></div>
+
+<section id="datapoint" style="padding:40px 0"><div class="wrap"><div class="card" style="text-align:center"><div class="tag">Data point of relevance</div>
+<div class="out" style="font-size:44px">[VERIFIED FIGURE]</div>
+<p>[One sentence on why this matters for coastal assets and economies.]</p>
+<p class="note">Source: [citation, year] · Status: Unverified. Publish only after scientific review. Rotate several data points over time.</p></div></div></section>
+
+<section id="solutions"><div class="wrap"><h2>Commercial services</h2>
+<p>OceanShot develops, delivers and monitors living coastal infrastructure that protects economic assets while restoring marine ecosystems.</p>
+<div class="grid" id="svc"></div>
+<h3 style="margin-top:32px">Optional partner-delivered services</h3>
+<p class="note">Subject to scope, feasibility, approved delivery partners and commercial agreement. Not represented as in-house OceanShot capabilities pending confirmation.</p>
+<div class="grid" id="opt"></div></div></section>
+
+<section id="projects" style="background:var(--surf)"><div class="wrap"><h2>Projects and results</h2>
+<div class="grid" style="grid-template-columns:2fr 1fr 1fr"><input id="q" placeholder="Search projects, places, methods"><select id="fc"><option value="">All client types</option><option>Resort</option><option>Government</option><option>Developer</option><option>Port</option><option>Insurer</option></select><select id="fs"><option value="">All statuses</option><option>Completed</option><option>Active</option><option>Planned</option></select></div>
+<div class="grid" style="margin-top:16px;grid-template-columns:1fr 1fr"><div class="card"><svg id="map" viewBox="0 0 360 180" width="100%" role="img" aria-label="Project map"><rect width="360" height="180" fill="none" stroke="var(--line)"/><line x1="0" y1="90" x2="360" y2="90" stroke="var(--line)"/><line x1="180" y1="0" x2="180" y2="180" stroke="var(--line)"/></svg><p class="note">Placeholder grid. Add a licensed basemap (e.g. Leaflet) and verified coordinates.</p></div><div><div id="plist"></div></div></div>
+<div class="card" id="pp" style="margin-top:16px"></div></div></section>
+
+<section id="mitigation"><div class="wrap"><h2>Restoration and mitigation</h2>
+<p>For developers, marine infrastructure owners and organizations with project-related environmental obligations.</p>
+<div class="grid" id="mit"></div>
+<p class="note">Regulatory pathways, permitting and acceptance of restoration as mitigation vary by jurisdiction. Requires legal and regulatory verification before publication.</p></div></section>
+
+<section id="clients" style="background:var(--surf)"><div class="wrap"><h2>Solutions by client</h2><div class="ptabs" id="ctabs"></div><div class="card" id="cpane"></div></div></section>
+
+<section id="calc"><div class="wrap"><h2>Client value calculator</h2>
+<p>Estimate costs, value and benefit-cost scenarios for your coastal asset. The calculator is available to registered clients in the client portal.</p>
+<p><button class="btn" id="signup1">Sign up for portal access</button> <button class="btn o" id="signin1">Sign in</button></p></div></section>
+
+<section id="lab" class="lab"><div class="wrap"><div class="tag">Nonprofit</div><h2>Ocean Innovation Lab</h2>
+<p>Scientific research, monitoring, innovation, training and education, with its own identity, complementing the commercial enterprise. Commercial revenue and nonprofit funding are kept separate.</p>
+<figure><img src="assets/img/barbuda.jpg" alt="Aerial view of the Barbuda coastline, white sand beach and turquoise reef lagoon" loading="lazy"><figcaption>OceanShot Innovation Lab, Barbuda. Completed with the generous donations of Paul DeJoria.</figcaption></figure>
+<p><a class="btn" href="#contact">Lab inquiry</a></p></div></section>
+
+<section id="contact"><div class="wrap"><h2>Contact / Start a project</h2>
+<div class="card" style="max-width:520px"><label>I am a<select><option>Commercial client</option><option>Government</option><option>Investor</option><option>Scientific collaborator</option><option>Educator</option><option>Other</option></select></label>
+<label>Name<input></label><label>Email<input type="email"></label>
+<label><input type="checkbox" style="width:auto"> I consent to being contacted about my inquiry. [PLACEHOLDER privacy notice]</label>
+<p><button class="btn" onclick="this.textContent='Prototype: form not connected'">Send</button></p></div></div></section>
+</main>
+
+<main id="portal"><div class="wrap">
+<div id="login" class="card" style="max-width:420px"><h2 id="lt">Client portal</h2>
+<p class="note">Prototype. No real authentication. Connect a secure identity provider before any client data is used.</p>
+<div id="sf" style="display:none"><label>Name<input></label><label>Organization and client type<input placeholder="e.g. resort, government, developer"></label></div><label>Email<input id="em" type="email" placeholder="client@example.com"></label>
+<label>Password<input type="password"></label>
+<p><button class="btn" id="go">Sign in (demo)</button> <a href="#" id="tog" class="note">New client? Request access</a> <button class="btn o" id="back">Back to site</button></p></div>
+<div id="dash" style="display:none">
+<h2>Welcome, <span id="who">client</span></h2><p class="note">Sample data. All values are placeholders.</p>
+<div class="ptabs"><button class="on" data-p="p1">Overview</button><button data-p="p2">Documents</button><button data-p="p3">Calculator</button><button data-p="p4">Messages</button><button id="out">Sign out</button></div>
+<div class="pane on" id="p1"><div class="grid">
+<div class="card"><div class="tag">Project</div><h3>[Project name]</h3><span class="pill">Status: Planned</span></div>
+<div class="card"><div class="tag">Phase progress</div><div class="bar"><i style="width:25%"></i></div><p class="note">Intake, diagnostic, proposal, delivery, monitoring</p></div>
+<div class="card"><div class="tag">Next step</div><p>[PLACEHOLDER]</p></div></div></div>
+<div class="pane" id="p2"><div class="card"><table><tr><th>Document</th><th>Status</th></tr><tr><td>Client assessment questionnaire</td><td>Template</td></tr><tr><td>Coastal resilience diagnostic</td><td>Template</td></tr><tr><td>Commercial proposal</td><td>Template</td></tr><tr><td>Client ROI summary</td><td>Template</td></tr></table></div></div>
+<div class="pane" id="p3"><p class="note">Illustrative only. All defaults below are placeholder assumptions, not OceanShot pricing, ecological performance, or projected returns. Replace with verified inputs before any client use.</p>
+<div class="grid"><div class="card">
+<label>Client type<select id="ctype"><option>Hotel or resort</option><option>Government</option><option>Developer</option><option>Port</option><option>Insurer</option></select></label>
+<label>Annual damage and maintenance cost (USD)<input id="dmg" type="number" value="100000"></label>
+<label>Project cost (USD) [placeholder]<input id="cost" type="number" value="500000"></label>
+<label>Annual monitoring cost (USD) [placeholder]<input id="mon" type="number" value="20000"></label>
+<label>Assumed annual loss reduction, % [placeholder]<input id="red" type="number" value="30"></label>
+<label>Discount rate, %<input id="dr" type="number" value="5"></label>
+<label>Scenario<select id="scen"><option value="0.5">Conservative</option><option value="1" selected>Base case</option><option value="1.5">Optimistic</option></select></label>
+</div><div class="card"><table id="res"></table><p class="note">Projection, not observed outcome. Sources of uncertainty: reef recovery rate, storm frequency, cost data, discount rate.</p></div></div></div></div>
+<div class="pane" id="p4"><div class="card"><p>Secure messaging with the OceanShot team. [Not connected]</p></div></div>
+</div></main>
+
+<section id="table"><div class="wrap"><h2>The Table of Living Coastal Infrastructure</h2>
+<p>Explore a cross-section of a living coastline. Select any labeled part of the scene, or a category, to see what it is and how it connects to OceanShot services.</p>
+<div class="lg" id="tlg"></div><svg id="sc" viewBox="0 0 800 420" width="100%" role="group" aria-label="Interactive coastal scene. Select a labeled part for details.">
+<defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fd3e6"/><stop offset="1" stop-color="#e6f5f7"/></linearGradient><linearGradient id="sw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2aa3b5"/><stop offset="1" stop-color="#0b4a63"/></linearGradient></defs>
+<rect width="800" height="172" fill="url(#sk)"/><rect y="170" width="800" height="250" fill="url(#sw)"/>
+<polygon points="330,172 430,235 560,300 800,332 800,420 330,420" fill="#c9b27c"/>
+<polygon points="0,140 200,122 300,148 332,172 330,420 0,420" fill="#a88f5d"/>
+<polygon points="0,140 200,122 300,148 332,172 0,172" fill="#5b9a55"/>
+<g data-i="21"><rect x="40" y="96" width="90" height="44" fill="#f1ede4"/><rect x="40" y="90" width="90" height="8" fill="#c4553b"/><g fill="#7fb8c9"><rect x="50" y="108" width="12" height="12"/><rect x="72" y="108" width="12" height="12"/><rect x="94" y="108" width="12" height="12"/><rect x="112" y="108" width="12" height="12"/></g></g>
+<g data-i="4"><ellipse cx="190" cy="140" rx="45" ry="16" fill="#e2cf9c"/><polygon points="260,150 332,172 270,172" fill="#e8d8a8"/></g>
+<g data-i="3"><path d="M215 152v-12M224 152v-16M233 152v-11M242 152v-15M251 152v-12" stroke="#d6e86a" stroke-width="2.5" fill="none"/></g>
+<g data-i="10"><rect x="302" y="150" width="12" height="40" fill="#8a8f96"/></g>
+<g data-i="2"><path d="M350 172l-6 14M362 172v16M374 172l6 14M390 172l-4 14M402 172l6 14" stroke="#6b4a2f" stroke-width="2.5" fill="none"/><g fill="#2f7d46"><circle cx="350" cy="160" r="12"/><circle cx="368" cy="154" r="14"/><circle cx="388" cy="158" r="13"/><circle cx="404" cy="162" r="10"/></g></g>
+<g data-i="1" id="sg" stroke="#47c26a" stroke-width="2.5" fill="none"></g>
+<g data-i="0" id="cr"></g>
+<g data-i="6"><rect x="705" y="304" width="22" height="26" fill="#7d8a93"/><rect x="731" y="310" width="22" height="22" fill="#8c98a0"/><rect x="757" y="306" width="22" height="26" fill="#7d8a93"/></g>
+<g data-i="5" stroke="#d9e8ef" fill="none" stroke-width="2"><path d="M525 285l10-14 10 14zM548 296l10-14 10 14z"/></g>
+<g data-i="11"><rect x="545" y="52" width="30" height="8" rx="3" fill="#2b3a42"/><circle cx="545" cy="50" r="6" fill="none" stroke="#2b3a42" stroke-width="2"/><circle cx="575" cy="50" r="6" fill="none" stroke="#2b3a42" stroke-width="2"/></g>
+<g data-i="12" stroke="#fff" stroke-dasharray="4 4" opacity=".8" fill="none"><path d="M560 62L500 168M560 62L620 168"/></g>
+<g data-i="13" stroke="#fff" opacity=".6" fill="none" stroke-width="1.5"><path d="M400 198q30-10 60 0t60 0M410 212q30-10 60 0t60 0"/></g>
+<g data-i="14"><rect x="696" y="160" width="12" height="16" fill="#e8a43a"/><line x1="702" y1="176" x2="702" y2="300" stroke="#e8a43a" stroke-dasharray="3 3"/></g>
+<g data-i="17" stroke="#fff" fill="none" stroke-width="2"><path d="M590 170q10-8 20 0t20 0t20 0t20 0"/></g>
+<g data-i="20" fill="#f6d26b"><ellipse cx="540" cy="225" rx="9" ry="4"/><ellipse cx="575" cy="238" rx="9" ry="4"/></g>
+<g data-i="18" stroke="#c4553b" stroke-dasharray="5 4" stroke-width="2"><line x1="332" y1="100" x2="332" y2="172"/></g>
+<g data-i="15" fill="none" stroke="#fff" stroke-width="2"><rect x="600" y="288" width="26" height="22"/></g>
+<text x="570" y="414" fill="#fff" font-size="11" opacity=".85">Restoration approaches</text>
+</svg>
+<div class="card" id="td" aria-live="polite"></div>
+<p class="note">Placeholder illustration, to be replaced by commissioned artwork. Definitions, evidence and service mappings are placeholders awaiting scientific and commercial verification.</p></div></section>
+<section id="learn"><div class="wrap"><h2>Learn and client knowledge</h2><div class="grid">
+<div class="card"><h3>Learning Center (public)</h3><p>Reef ecology, nature-based infrastructure, ecosystem services, glossary. Searchable, categorized, expandable.</p></div>
+<div class="card"><h3>Client Knowledge Center (portal)</h3><p>Guidance, methods and reporting for signed-in commercial and government clients.</p></div>
+<div class="card"><h3>FAQs</h3><p>Searchable, expandable. Answers published only after verification.</p></div></div></div></section>
+<section id="reg" style="background:var(--surf)"><div class="wrap"><h2>Pre-publication verification register</h2><p class="note">Internal view. Remove before launch.</p><div class="card"><table id="vr"></table></div></div></section>
+<footer><div class="wrap"><div class="grid" style="margin-bottom:20px">
+<div><b>Services</b><br><a href="#solutions" data-s>Commercial services</a><br><a href="#mitigation" data-s>Restoration and mitigation</a><br><a href="#projects" data-s>Projects and results</a></div>
+<div><b>Clients</b><br><a href="#clients" data-s>Hotels and resorts</a><br><a href="#clients" data-s>Island governments</a><br><a href="#clients" data-s>Developers, ports, insurers</a><br><a href="#" id="fcalc">Value calculator</a><br><a href="#" id="fport">Client portal</a></div>
+<div><b>Learn</b><br><a href="#table" data-s>Living coastal infrastructure table</a><br><a href="#learn" data-s>Learning Center</a><br><a href="#learn" data-s>Client Knowledge Center</a><br><a href="#learn" data-s>FAQs</a></div>
+<div><b>Lab and contact</b><br><a href="#lab" data-s>Ocean Innovation Lab</a><br><a href="#contact" data-s>Start a project</a><br><a href="#contact" data-s>Partners and investors</a></div></div>
+OceanShot. Draft prototype with placeholder content. Not for public release until facts, imagery and claims are verified and approved.</div></footer>
+</body></html>
